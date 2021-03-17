@@ -1,5 +1,5 @@
 function goHome() {
-    window.location='https://emilyyao.me/home.html';
+    window.location='https://emilyyao.me/index.html';
 }
 
 function goToResume() {
