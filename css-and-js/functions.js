@@ -13,3 +13,7 @@ function goToProjects() {
 function goToBlog() {
     window.location = 'https://emilyyao.me/blog.html';
 }
+
+function goToMisc() {
+    window.location = 'https://emilyyao.me/misc.html';
+}

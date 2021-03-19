@@ -6,6 +6,7 @@
     --font-family-paragraph: 'Inconsolata';
     --font-family-button: 'Fira Mono', monospace;
     --font-family-heading: monospace;
+    --font-family-blog: 'Libre Baskerville', sans-serif;
 
     --c-red: #ffabab;
     --c-orange: #ffcbc1;
@@ -23,7 +24,7 @@
 
     --theme-outsidebackground: var(--c-black);
     --theme-insidebackground: var(--c-darkgrey);
-    --theme-pagecolor: var(--c-pink);
+    --theme-pagecolor: var();
     --theme-fontcolor: var(--c-grey);
     --theme-title: var(--c-lightgrey);
 }
@@ -64,34 +65,40 @@ h1 {
     padding: 1px;
 }
 
-h2 {
+h1.section-title {
     margin: 15px 0px 10px 0px;
     font-size: 28px;
-    font-family: var(--font-family-heading);
-    padding: 1px;
 }
 
-h2.blog-title {
-    font-family: 'Libre Baskerville', serif;
+h1.footer-title {
+    margin: 0px 0px 8px 0px;
+    padding: 1px;
+    line-height: 1.2;
+    font-size: 18px;
+}
+
+h2 {
+    font-family: var(--font-family-blog);
+    color: var(--c-lightgrey);
+    font-size: 28px;
     font-style: italic;
     letter-spacing: 1.5px;
-    color: var(--c-lightgrey);
-}
-
-h2.blog-subtitle {
-    font-family: 'Libre Baskerville', serif;
-    color: var(--c-lightgrey);
-    letter-spacing: 1.5px;
-    font-size: 14px;
-    margin: 5px 0px 0px 0px;
-    font-weight: 500;
-}
-
-h3 {
     margin: 0px 0px 10px 0px;
-    padding: px;
-    line-height: 1.2;
-    font-size: 20px;
+}
+
+h2.subtitle {
+    font-style: normal;
+    letter-spacing: 1.1px;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 7px 0px 0px 0px;
+}
+
+h2.paragraph {
+    font-style: normal;
+    margin: 10px 0px 3px 0px;
+    font-size: 24px;
+    letter-spacing: normal;
 }
 
 p {
@@ -123,6 +130,31 @@ a:hover, a:active {
     border-radius: 3px;
 }
 
+button {
+    padding: 2px 5px;
+
+    border: 3px var(--theme-pagecolor) solid;
+    border-radius: 6px;
+    margin: 2px 4px 2px 0px;
+
+    background-color: var(--theme-pagecolor);
+    color: var(--c-black);
+    font-family: var(--font-family-button);
+    font-size: 20px;
+    font-weight: 700;
+    outline: none;
+}
+
+button:hover, button:active {
+    border: 3px var(--theme-fontcolor) solid;
+    background-color: var(--theme-fontcolor);
+    color: var(--theme-outsidebackground);
+}
+
+div.header-buttons {
+    margin: 20px auto 14px auto;
+}
+
 .box {
     border: 8px solid var(--theme-pagecolor);
     border-radius: 6px;
@@ -148,6 +180,14 @@ a:hover, a:active {
     margin: 0px;
     padding: 0px;
     float: left;
+}
+
+.header-paragraph {
+    margin: 40px 0px 0px 0px;
+}
+
+.body-paragraph {
+    margin: 20px 0px 0px 0px;
 }
 
 .underline {
@@ -217,44 +257,4 @@ a:hover, a:active {
         -2px 2px var(--theme-insidebackground),
         -2px 2.25px var(--theme-insidebackground),
         -2px 2.5px var(--theme-insidebackground);
-}
-
-.header-paragraph {
-    margin: 40px 0px 0px 0px;
-}
-
-.body-paragraph {
-    margin: 20px 0px 0px 0px;
-}
-
-button {
-    padding: 2px 5px;
-
-    border: 3px var(--theme-pagecolor) solid;
-    border-radius: 6px;
-    margin: 2px 4px 2px 0px;
-
-    background-color: var(--theme-pagecolor);
-    color: var(--c-black);
-    font-family: var(--font-family-button);
-    font-size: 20px;
-    font-weight: 700;
-    outline: none;
-}
-
-button:hover, button:active {
-    border: 3px var(--theme-fontcolor) solid;
-    background-color: var(--theme-fontcolor);
-    color: var(--theme-outsidebackground);
-}
-
-div.header-buttons {
-    margin: 20px auto 14px auto;
-}
-
-.paragraph-title {
-    font-family: 'Libre Baskerville', sans-serif;
-    margin: 5px 0px 5px 0px;
-    font-size: 24px;
-    color: var(--c-lightgrey)
 }
