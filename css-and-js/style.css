@@ -21,6 +21,9 @@
     --c-grey: #d2d2d2;
     --c-darkgrey: #383942;
     --c-black: #282c34;
+    --c-code: #41464f;
+
+    --c-rating: #ffe757;
 
     --theme-outsidebackground: var(--c-black);
     --theme-insidebackground: var(--c-darkgrey);
@@ -41,9 +44,15 @@
     }
 }
 
+@media screen and (max-width: 1220px) {
+    body {
+        margin: 0% 10%;
+    }
+}
+
 @media screen and (max-width: 900px) {
     body {
-        margin: 0% 5%;
+        margin: 0% 3%;
     }
 }
 
@@ -88,24 +97,24 @@ h2 {
 
 h2.subtitle {
     font-style: normal;
-    letter-spacing: 1.1px;
-    font-size: 13px;
+    letter-spacing: 1.2px;
+    font-size: 85%;
     font-weight: 500;
-    margin: 7px 0px 0px 0px;
+    margin: 8px 0px 8px 0px;
 }
 
 h2.paragraph {
     font-style: normal;
     margin: 10px 0px 3px 0px;
-    font-size: 24px;
+    font-size: 140%;
     letter-spacing: normal;
 }
 
 p {
-    font-size: 20px;
+    font-size: 110%;
     font-weight: 500;
-    line-height: 1.3;
-    padding: 1px;
+    line-height: 1.2;
+    padding: 0px;
     margin: 0px;
 }
 
@@ -118,6 +127,17 @@ p.tiny {
     font-size: 12px;
 }
 
+code.rating {
+    border: 3px solid var(--c-rating);
+    background-color: var(--c-yellow);
+    font-size: 20px;
+    border-radius: 4px;
+    padding: 1px 6px;
+    margin: 0px;
+    color:var(--c-black);
+    font-weight: bold;
+}
+
 a {
     color: var(--theme-fontcolor);
     text-decoration: none;
@@ -128,6 +148,11 @@ a:hover, a:active {
     color: var(--theme-outsidebackground);
     text-shadow: none;
     border-radius: 3px;
+}
+
+a.tag {
+    font-weight: 300;
+    font-size: 16px;
 }
 
 button {
@@ -153,6 +178,24 @@ button:hover, button:active {
 
 div.header-buttons {
     margin: 20px auto 14px auto;
+}
+
+div.break {
+    margin-top: 15px;
+}
+
+table {
+    margin: 24px;
+    font-size: 1.2em;
+    table-layout: fixed;
+}
+
+th {
+    font-weight: 500;
+    font-size: 100%;
+    margin: 10px;
+    text-align: left;
+    vertical-align: top;
 }
 
 .box {
@@ -182,6 +225,10 @@ div.header-buttons {
     float: left;
 }
 
+.subsection {
+    max-width: 10%;
+}
+
 .header-paragraph {
     margin: 40px 0px 0px 0px;
 }
@@ -192,6 +239,60 @@ div.header-buttons {
 
 .underline {
     border-bottom: 2px solid var(--theme-pagecolor);
+    display: inline-block;
+    line-height: 0.95;
+    text-shadow: 
+        0px 1px var(--theme-insidebackground),
+        0px 1.25px var(--theme-insidebackground),
+        0px 1.5px var(--theme-insidebackground),
+        0px 1.75px var(--theme-insidebackground),
+        1px 1px var(--theme-insidebackground),
+        1px 1.25px var(--theme-insidebackground),
+        1px 1.5px var(--theme-insidebackground),
+        1px 1.75px var(--theme-insidebackground),
+        -1px 1px var(--theme-insidebackground),
+        -1px 1.25px var(--theme-insidebackground),
+        -1px 1.5px var(--theme-insidebackground),
+        -1px 1.75px var(--theme-insidebackground),
+        2px 1px var(--theme-insidebackground),
+        2px 1.25px var(--theme-insidebackground),
+        2px 1.5px var(--theme-insidebackground),
+        2px 1.75px var(--theme-insidebackground),
+        -2px 1px var(--theme-insidebackground),
+        -2px 1.25px var(--theme-insidebackground),
+        -2px 1.5px var(--theme-insidebackground),
+        -2px 1.75px var(--theme-insidebackground);
+}
+
+.underline-candle {
+    border-bottom: 2px solid var(--c-lime);
+    display: inline-block;
+    line-height: 0.95;
+    text-shadow: 
+        0px 1px var(--theme-insidebackground),
+        0px 1.25px var(--theme-insidebackground),
+        0px 1.5px var(--theme-insidebackground),
+        0px 1.75px var(--theme-insidebackground),
+        1px 1px var(--theme-insidebackground),
+        1px 1.25px var(--theme-insidebackground),
+        1px 1.5px var(--theme-insidebackground),
+        1px 1.75px var(--theme-insidebackground),
+        -1px 1px var(--theme-insidebackground),
+        -1px 1.25px var(--theme-insidebackground),
+        -1px 1.5px var(--theme-insidebackground),
+        -1px 1.75px var(--theme-insidebackground),
+        2px 1px var(--theme-insidebackground),
+        2px 1.25px var(--theme-insidebackground),
+        2px 1.5px var(--theme-insidebackground),
+        2px 1.75px var(--theme-insidebackground),
+        -2px 1px var(--theme-insidebackground),
+        -2px 1.25px var(--theme-insidebackground),
+        -2px 1.5px var(--theme-insidebackground),
+        -2px 1.75px var(--theme-insidebackground);
+}
+
+.underline-book {
+    border-bottom: 2px solid var(--c-darkblue);
     display: inline-block;
     line-height: 0.95;
     text-shadow: 
@@ -257,4 +358,61 @@ div.header-buttons {
         -2px 2px var(--theme-insidebackground),
         -2px 2.25px var(--theme-insidebackground),
         -2px 2.5px var(--theme-insidebackground);
+}
+
+div.specs {
+    margin: 10px;
+    padding: 0px;
+    display: flex;
+    flex-direction: left;
+    justify-content: flex-start;
+}
+
+div.specs-code {
+    border: 3px solid var(--c-lightgrey);
+    background-color: var(--c-grey);
+    font-size: 100%;
+    border-radius: 4px;
+    padding: 1px 6px;
+    margin: 0px;
+    color:var(--c-black);
+    font-weight: bold;
+
+    max-width: 65%;
+    width: fit-content;
+    font-weight: 700;
+}
+
+div.specs-words {
+    min-width: 25%;
+    width: fit-content;
+    font-style: italic;
+}
+
+p.code-words {
+    max-width: fit-content;
+    margin: 3px;
+    padding: 1px 6px;
+}
+
+p.code-code {
+    font-weight: bolder;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--theme-insidebackground);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--c-grey);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--c-grey);
+    border-radius: 5px;
 }
