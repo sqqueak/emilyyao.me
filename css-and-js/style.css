@@ -16,16 +16,16 @@
     --c-darkblue: #63b5ff;
     --c-purple: #d4aaff;
     --c-pink: #ffb5e8;
-    --c-lightgrey: #d1d1d1;
-    --c-grey: #b0b0b0;
+    --c-lightgrey: #eeeeee;
+    --c-grey: #d2d2d2;
     --c-darkgrey: #383942;
     --c-black: #282c34;
 
     --theme-outsidebackground: var(--c-black);
     --theme-insidebackground: var(--c-darkgrey);
     --theme-pagecolor: var(--c-pink);
-    --theme-fontcolor: var(--c-lightgrey);
-    --theme-highlight: var(--c-grey);
+    --theme-fontcolor: var(--c-grey);
+    --theme-title: var(--c-lightgrey);
 }
 
 @media screen and (min-width: 1440px) {
@@ -71,6 +71,22 @@ h2 {
     padding: 1px;
 }
 
+h2.blog-title {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    color: var(--c-lightgrey);
+}
+
+h2.blog-subtitle {
+    font-family: 'Libre Baskerville', serif;
+    color: var(--c-lightgrey);
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    margin: 5px 0px 0px 0px;
+    font-weight: 500;
+}
+
 h3 {
     margin: 0px 0px 10px 0px;
     padding: px;
@@ -92,7 +108,7 @@ p.list {
 }
 
 p.tiny {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 a {
@@ -121,12 +137,14 @@ a:hover, a:active {
     padding: 17px;
     border-radius: 6px;
     background-color: var(--theme-pagecolor);
-    min-height: 11.2vh;
-    color: var(--theme-outsidebackground)
+    color: var(--theme-outsidebackground);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 .footer-subsection {
-    width: 20%;
+    min-width: 20%;
     margin: 0px;
     padding: 0px;
     float: left;
@@ -205,6 +223,10 @@ a:hover, a:active {
     margin: 40px 0px 0px 0px;
 }
 
+.body-paragraph {
+    margin: 20px 0px 0px 0px;
+}
+
 button {
     padding: 2px 5px;
 
@@ -228,4 +250,11 @@ button:hover, button:active {
 
 div.header-buttons {
     margin: 20px auto 14px auto;
+}
+
+.paragraph-title {
+    font-family: 'Libre Baskerville', sans-serif;
+    margin: 5px 0px 5px 0px;
+    font-size: 24px;
+    color: var(--c-lightgrey)
 }
