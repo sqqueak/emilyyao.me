@@ -30,6 +30,7 @@
     --theme-pagecolor: var();
     --theme-fontcolor: var(--c-grey);
     --theme-title: var(--c-lightgrey);
+    --theme-highlight: var(--theme-pagecolor);
 }
 
 @media screen and (min-width: 1440px) {
@@ -144,7 +145,7 @@ a {
 }
 
 a:hover, a:active {
-    background-color: var(--theme-pagecolor);
+    background-color: var(--theme-highlight);
     color: var(--theme-outsidebackground);
     text-shadow: none;
     border-radius: 3px;
@@ -379,7 +380,7 @@ div.specs-code {
     color:var(--c-black);
     font-weight: bold;
 
-    max-width: 65%;
+    max-width: 70%;
     width: fit-content;
     font-weight: 700;
 }
