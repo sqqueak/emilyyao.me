@@ -418,3 +418,12 @@ p.code-code {
     background: var(--c-grey);
     border-radius: 5px;
 }
+
+div.column {
+    width: 30%;
+    float: left;
+}
+
+div.object {
+    margin: 0px 8px;
+}
