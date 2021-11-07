@@ -5,14 +5,17 @@
 <head>
     <meta charset="UTF-8" author="Emily Yao"></meta>
     <title>Home - Emily Yao</title>
-    <link rel="stylesheet" href="css-and-js/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;800&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap">
     <script src="css-and-js/functions.js"></script>
+    <script src="bootstrap/js/bootstrap.js.min"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css-and-js/style.css">
     <style>
         :root {
-            --theme-pagecolor: var(--c-aqua);
+            --theme-pagecolor: var(--c-darkblue);
         }
     </style>
 </head>
@@ -22,53 +25,69 @@
         <div class="header-buttons">
 
             <button id="" onClick="goHome()">home</button>
-            <button id="" onClick="goToResume()">resumé</button>
+            <!-- <button id="" onClick="goToResume()">resumé</button> -->
             <button id="" onClick="goToProjects()">projects</button>
-            <button id="" onClick="goToBlog()">blog</button>
-            <button id="" onClick="goToMisc()">misc</button>
+            <!-- <button id="" onClick="goToBlog()">blog</button>
+            <button id="" onClick="goToMisc()">misc</button> -->
         </div>
     </header>
 
     <div class="box">
-        <h1>Hey there! I'm Emily 👋</h1>
-        <p>I'm a high school junior interested in computer science and astronomy! I'm currently learning
-            Java from the University of Wisconsin-Madison as a dual-enrolled student. In my free time I like
-            to work on hackathons, animation, and robotics.
+        <h1 style="font-family:'Arvo',serif">👋</h1>
+        <p class="header-paragraph">I'm a high school senior interested in computer science and astronomy! In my free time I like
+            to work on coding projects, animation, and robotics</a>.
         </p>
-        <div class="header-paragraph">
-            <h1 class="section-title">My info!</h1>
-            <p class="list">- Email &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: emily.yao</p>
-            <p class="list">- GitHub &nbsp&nbsp&nbsp&nbsp&nbsp: <a href="https://github.com/heyitssqueak"
-                    class="underline">heyitssqueak</a></p>
-            <p class="list">- LinkedIn &nbsp&nbsp&nbsp: <a href="http://linkedin.com/in/emilyyao04"
-                    class="underline">emilyyao04</a></p>
-        </div>
-        <div class="header-paragraph">
-            <h1 class="section-title">More about me!</h1>
+        <p class="header-paragraph">My portfolio is empty because I simply do not participate in it.
+        </p>
+        <div class="header-section">
+            <h1 class="header-title">projects and stuff</h1>
+            <p class="header-paragraph">I'm currently making math videos on [AP Calculus BC] and [Calc 3, functions of multiple variables]. They are
+                a work-in-progress.
+                
+                <!-- You can
+                check out my scripts and notes <a class="underline" href="LINK">here</a> and watch my videos <a class="underline" href="LINK">here</a>.  -->
 
+            </p>
+            <p class="header-paragraph"> I build robots with my FRC team, <a class="underline" href="https://team1306.com">BadgerBOTS</a>. I write
+                code for our [swerve drive robot].
+            </p>
+        </div>        
+        <div class="header-section">
+            <h1 class="header-title">more about me</h1>
+            <p class="list">- <a class="underline" href="https://github.com/heyitssqueak">GitHub</a>.</p>
+            <p class="list">- My favorite <a class="underline">drinks</a>, 
+                <a class="underline">candles</a>,
+                <a class="underline">books</a>, and
+                <a class="underline">songs</a>.
+            </p>
+            <p class="list">- Check out my <a class="underline" href="https://github.com/heyitssqueak">animations</a> :)</p>
+            <!-- <p class="list">- GitHub &nbsp&nbsp&nbsp&nbsp&nbsp: <a href="https://github.com/heyitssqueak"
+                    class="underline">heyitssqueak</a></p> -->
+            <!-- <p class="list">- LinkedIn &nbsp&nbsp&nbsp: <a href="http://linkedin.com/in/emilyyao04"
+                    class="underline">emilyyao04</a></p> -->
+        </div>
+        <div class="header-section">
+            <h1 class="header-title">contact information</h1>
+            <p class="spoiler list" style="margin:0 250px 0 30px">  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp don't </p>
         </div>
     </div>
 
     <footer>
         <div class="footer">
-            <div class="footer-subsection">
+            <div style="width:15%">
                 <h1 class="footer-title">home</h1>
             </div>
-            <div class="footer-subsection">
+            <div style="width:25%">
                 <h1 class="footer-title">blog</h1>
-                <p class="tiny">candles</p>
+                    <p class="footer-paragraph">ba bonk</p>
             </div>
-            <div class="footer-subsection">
-                <h1 class="footer-title"></h1>
+            <div style="width:40%">
+                <h1 class="footer-title">stuff</h1>
             </div>
-            <div class="footer-subsection">
-                <h1 class="footer-title"></h1>
-            </div>
-            <div class="footer-subsection">
-                <h1 class="footer-title">my socials<h1>
-                    <p class="tiny">GitHub</p>
-                    <p class="tiny">LinkedIn</p>
-                    <p class="tiny">Send me an email!</p>
+            <div style="width:20%">
+                <h1 class="footer-title">my socials</h1>
+                <p class="footer-paragraph">link</p>
+                <p class="footer-paragraph">link</p>
             </div>
         </div>
     </footer>

@@ -5,17 +5,15 @@
 <head>
     <meta charset="UTF-8" author="Emily Yao"></meta>
     <title>Home - Emily Yao</title>
+    <link rel="stylesheet" href="css-and-js/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;800&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap">
     <script src="css-and-js/functions.js"></script>
-    <script src="bootstrap/js/bootstrap.js.min"></script>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css-and-js/style.css">
     <style>
         :root {
-            --theme-pagecolor: var(--c-pink);
+            --theme-pagecolor: var(--c-darkblue);
         }
     </style>
 </head>
@@ -23,27 +21,14 @@
 <body>
     <header>
         <div class="header-buttons">
+
             <button id="" onClick="goHome()">home</button>
             <button id="" onClick="goToProjects()">projects</button>
         </div>
     </header>
 
     <div class="box">
-        <h2>Projects</h2>
 
-        <table>
-            <!-- <tr>
-                <td style="width:40px;">&nbsp; *</td>
-                <td><a href="LINK" class="underline" style="--theme-highlight: var(--c-aqua)">FILLER PROJECT</a></td>
-            </tr> -->
-
-            <tr>
-                <td>&nbsp; * &nbsp;</td>
-                <td><a href="https://emilyyao.me/projects/icecube-afterschool" class="underline" 
-                    style="--theme-highlight: var(--c-yellow)">IceCube Afterschool: Journey to the Cosmos</a></td>
-            </tr>
-
-        </table>
     </div>
 
     <footer>
