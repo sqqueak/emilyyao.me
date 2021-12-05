@@ -135,6 +135,13 @@ a {
     padding: 2px 0px 0px 0px;
 }
 
+a.footer {
+    color: var(--theme-outsidebackground);
+    text-decoration: none;
+    padding: 2px 0px 0px 0px;
+    margin: 0px;
+}
+
 a:hover, a:active {
     background-color: var(--theme-highlight);
     color: var(--theme-outsidebackground);
@@ -188,12 +195,17 @@ td {
 }
 
 .box {
-    border: 8px solid var(--theme-pagecolor);
+    border: 12px solid var(--theme-pagecolor);
     border-radius: 6px;
-    margin: 10px 0px;
-    padding: 24px;
-    background-color: var(--theme-insidebackground);
+    background: var(--theme-pagecolor);
     min-height: 73vh;
+}
+
+.box-content {
+    min-height: 73vh;
+    padding: 36px;
+    border-radius: 4px;
+    background: var(--theme-insidebackground);
 }
 
 .footer {
