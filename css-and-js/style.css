@@ -549,6 +549,8 @@ img {
     border-radius: 2px;
     z-index: 10;
     align-content: center;
+    width: 120px;
+    height: 120px;
   }
 
   /* .item-center-song img.hover-text {
